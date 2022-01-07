@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(182, 182, 182);
+    overflow-x: hidden;
+    text-align: center;
+}
+
+#gk_introduce {
+    position: relative;
+    max-height: 85vh;
+    margin-bottom: 2vh;
+}
+
+#gk_introduce b {
+    text-align: left;
+    font-size: 2em;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#gk_introduce img {
+    height: 85vh;
+}
+
+
+header {
+    display: flex;
+    height: 5vh;
+    margin-bottom: 3vh;
+    /* justify-items: center; */
+}
+
+#title {
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 2vw;
+    font-size: 2em;
+}
+
+#icon {
+    height: 100%;
+    font-size: 1.5em;
+}
+
+#icon ion-icon {
+    height: 100%;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f89;
+    font-weight: 900;
+}
+
+.navul li {
+    color: black;
+    display: inline;
+    margin: 2%;
+    margin-top: 2vh;
+
+}
+
+img {
+    width: 100%;
+}
+
+.boxs {
+    display: flex;
+    justify-self: flex-start;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    /* align-items: baseline; */
+    flex: 25%;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    align-items: stretch; 
+}
+
+.Charmboxs {
+    display: flex;
+    justify-self: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    align-items: baseline;
+    flex: 25%;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+
+.Charmboxs .box{
+    max-width: 25%;
+}
+
+
+.box {
+    height: 100%;
+    background-color: #f1f1f1;
+    min-width: 15%;
+    width: auto;
+    max-width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    align-self: start;
+    align-items: baseline;
+}
+
+#Pillow .box {
+    max-width: 45%;
+}
+
+
+@media (max-width: 375px) {
+    .text {
+        font-size: 10px;
+    }
+
+    .box {
+        min-width: 66%;
+    }
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 0.5em;
+    }
+
+    .box {
+        min-width: 33%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .box {
+        min-width: 30%;
+    }
+    #gk_introduce b {
+        font-size: 1.2em;
+    }
+}
