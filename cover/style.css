@@ -1,0 +1,185 @@
+body {
+    padding: 2%;
+}
+
+main {
+    background-color: thistle;
+    margin: 2%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+#maintext {
+    text-align: center;
+    font-size: 2em;
+    align-self: center;
+    color: aliceblue;
+}
+
+#Peopleimg {
+    align-self: center;
+    grid-column: 2;
+    grid-row: span 2;
+    /* grid-column: 2; */
+    /* background-image: url("img/1.jpg"); */
+    /* background-position: 50%; */
+}
+
+#Peopleimg img {
+    width: 100%;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+#skills {
+    grid-row: 2;
+    color: aliceblue;
+    font-size: 1.7em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.grids {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+}
+
+section {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 2%;
+}
+
+#meesage {
+    /* background-color:tomato; */
+    /* height: auto; */
+    letter-spacing: 15px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#twomeesage {
+    height: 15vh;
+    text-align: left;
+    letter-spacing: 20px;
+    font-size: 1.4em;
+    /* linear-gradint ; */
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(50, 226, 50, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(124, 124, 153, 0) 70.71%);
+}
+
+#god {
+    text-align: right;
+}
+
+img {
+    width: 100%;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#meesage {
+    font-size: 1.8em;
+}
+
+
+#end {
+    background-color: tomato;
+    margin: 2%;
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+}
+
+#endimg {
+    grid-row: 2;
+}
+
+.text {
+    width: 100%;
+    font-weight: 700;
+    font-size: 2em;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .text{
+        font-size: 1.5em;
+    }
+    #meesage {
+        font-size: 1.3em;
+    }
+
+    #twomeesage {
+        font-size: 1em;
+    }
+
+    #maintext {
+        font-size: 1.2em;
+    }
+
+    #skills {
+        grid-column: span 2;
+    }
+
+    #Peopleimg {
+        grid-row: span 1;
+    }
+}
+
+
+
+/* hr */
+hr {
+    size: 7;
+    border: 0;
+    clear: both;
+    height: 3px;
+    display: block;
+    margin: 2.4rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+/* -- Animated hr -- */
+
+.progress {
+    background: rgba(1, 124, 255, 0.1);
+    height: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress::before {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-name: progress;
+    background: rgb(2, 255, 234);
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    width: 80px;
+}
+
+@keyframes progress {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(1440px);
+    }
+}
