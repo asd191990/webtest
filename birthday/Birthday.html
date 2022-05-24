@@ -1,27 +1,154 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.min.js" integrity="sha512-/gO16YMp20RIqCZXZyvMlzALQqEoiDU0akshw25wFiXCRGl+0p/HPWkOd8HWFn6bnatGhxakGLfYhWaPPVQIyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
-    <script>
-      THREEx.ArToolkitContext.baseURL =
-        "https://rawgit.com/jeromeetienne/ar.js/master/three.js/";
-    </script>
+    <meta charset="utf-8" />
+    <title>WOW輕鬆讓網頁實現動畫效果</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style type="text/css">
+      body {
+        overflow-x: hidden;
+        font-family: "Microsoft Yahei";
+      }
+      body h1 {
+        width: 100%;
+        margin: 80px 0;
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+      }
+      body h2 {
+        width: 100%;
+        margin: 80px 0;
+        font-size: 45px;
+        font-weight: 500;
+        text-align: center;
+      }
+      body .txt {
+        margin: 80px 0;
+        font-size: 16px;
+        text-align: center;
+      }
+      .dowebok {
+        margin: 0 auto;
+      }
+      .dowebok ul {
+        list-style-type: none;
+      }
+      .dowebok .m_list {
+        font-size: 0;
+        text-align: center;
+      }
+      .dowebok .wow {
+        display: inline-block;
+        width: 280px;
+        height: 280px;
+        margin: 30px 15px 0;
+        border-radius: 50%;
+        font: 30px/280px "Microsoft Yahei";
+        vertical-align: top;
+        *display: inline;
+        zoom: 1;
+      }
+      .bg-green {
+        background: #5bd5a0;
+      }
+      .bg-blue {
+        background: #1daee9;
+      }
+      .bg-purple {
+        background: #c843a5;
+      }
+      .bg-red {
+        background: #eb3980;
+      }
+      .bg-yellow {
+        background: #ffcc35;
+      }
+    </style>
   </head>
-
-  <body style="margin: 0px; overflow: hidden">
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-        <a-marker type='pattern' url='pattern-qr-code.patt'>
-            <a-entity position='-3 2 0' text="width: 5; value:I am Psyduck. We are pokemon. We love you"></a-entity>
-             <a-entity position='0 0 0' gltf-model="url(scene.gltf)"></a-entity> 
-        </a-marker>
+  <body>
+    <h1>生日快樂</h1>
     <!-- 你看到註解了? 解決隱藏彩蛋2 生日快樂  -->
+    <h2>ＹＯ 生日快樂</h2>
+    <p class="txt"></p>
+    <div class="dowebok">
+      <div class="m_list">
+        <div class="wow rollIn bg-blue"></div>
+        <div class="wow bounceInDown bg-green">今天</div>
+        <div class="wow lightSpeedIn bg-purple"></div>
+      </div>
+      <div class="m_list">
+        <div class="wow rollIn bg-yellow" data-wow-delay="0.5s">是你</div>
+        <div
+          class="wow pulse bg-red"
+          data-wow-iteration="5"
+          data-wow-duration="0.15s"
+        >往下滑</div>
+        <div class="wow bounceInRight bg-blue">生日</div>
+      </div>
+      <div class="m_list">
+        <div class="wow bounceInLeft bg-green"></div>
+        <div class="wow flipInX bg-purple">感謝秉欣</div>
+        <div class="wow bounceInRight bg-yellow"></div>
+      </div>
+      <div class="m_list">
+        <div class="wow rollIn bg-blue">平常</div>
+        <div
+          class="wow shake bg-red"
+          data-wow-iteration="5"ㄉ
+          data-wow-duration="0.15s"
+        >ㄉ</div>
+        <div class="wow swing bg-purple" data-wow-iteration="2">照顧</div>
+      </div>
+      <div class="m_list">
+        <div class="wow rollIn bg-red"></div>
+        <div class="wow bounceInU bg-yellow" data-wow-delay="0.5s"  data-wow-duration="0.15s">是</div>
+        <div
+          class="wow lightSpeedIn bg-green"
+          data-wow-delay="0.5s"
+        ></div>
+      </div>
+      <div class="m_list">
+        <div class="wow bounceInLeft bg-purple">SA</div>
+        <div
+          class="wow pulse bg-blue"
+          data-wow-iteration="5"
+          data-wow-duration="0.25s"
+        ></div>
+        <div class="wow lightSpeedIn bg-yellow">OO</div>
+      </div>
+      <div class="m_list">
+        <div
+          class="wow bg-green"
+          data-wow-iteration="8"
+          data-wow-duration="0.15s"
+        ></div>
+        <div class="wow rollIn bg-red">一次過的男人</div>
+        <div class="wow bounceInRight bg-purple"></div>
+      </div>
+      <div class="m_list">
+        <div class="wow rollIn bg-red" data-wow-delay="0.5s">
+          實習
+        </div>
+        <div class="wow bounceInDown bg-green" data-wow-delay="1s"></div>
+        <div class="wow bounceInRight bg-yellow" data-wow-delay="1.5s">
+          肯定能夠
+        </div>
+      </div>
+      <div class="m_list">
+        <div class="wow rotateIn bg-red" data-wow-delay="0.5s"></div>
+        <div class="wow bounceInDown bg-green" data-wow-delay="2s">轉正啦</div>
+        <div class="wow fadeInUpBig bg-yellow" data-wow-delay="1.5s"></div>
+      </div>
+      <div class="m_list">
+        <div class="wow bounceInDown bg-red" data-wow-delay="2.5s">未來</div>
+        <div class="wow bounceInDown bg-green" data-wow-delay="2.7s">要</div>
+        <div class="wow bounceInRight bg-yellow" data-wow-delay="3.1s">開心</div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
-
-  <script>
-    console.log(
-      "%c小彩蛋1 生日快樂！！！！",
-      "color:#FF4500	;font-size: 24px;font-weight: bold;text-decoration: underline;"
-    );
-  </script>
 </html>
